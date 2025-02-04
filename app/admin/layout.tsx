@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
 
@@ -9,7 +9,7 @@ export default function AdminLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="flex flex-col md:flex-row">
+      <body>
         {/* Sidebar */}
         <aside className="w-64 text-white h-screen fixed left-0 top-0">
           <Sidebar />
@@ -23,9 +23,7 @@ export default function AdminLayout({
           </header>
 
           {/* Page Content */}
-          <main className="p-6 mt-16 bg-gray-100 min-h-screen">
-            {children}
-          </main>
+          <main className="p-6 mt-16 bg-gray-100 min-h-screen">{children}</main>
         </div>
       </body>
     </html>
